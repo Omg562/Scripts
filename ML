@@ -242,11 +242,226 @@ game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remot
 
 end)
 
+local MainSection = Main:NewSection("Jean Grey")
+
+MainSection:NewToggle("Pain Infliction", "Keybind (4)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:
+	    GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "4" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "\0PainInfliction\0\0",
+    [2] = player.character.UpperTorso
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+    
+player.character.RagdollConstraints:destroy()
+
+    end
+    end
+    end)
+end)
 
 
+MainSection:NewToggle("Desintegration", "Keybind (5)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:
+	    GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "5" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "\0Desintegration\0\0",
+    [2] = player.character.UpperTorso
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+    
+player.character.RagdollConstraints:destroy()
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewToggle("Life Drain", "Keybind (6)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:
+	    GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "6" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "\0LifeDrain\0\0",
+    [2] = player.character.UpperTorso
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+    
+player.character.RagdollConstraints:destroy()
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewButton("Get Wings", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Jean Grey Fly Start\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Remove Wings", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Jean Grey Fly End\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
 
 
+MainSection:NewButton("Shield Start", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Jean Grey Shield Start\0\0"
+}
 
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Shield End", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Jean Grey Shield End\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
 
                MainSection:NewLabel("Reset Character")
 

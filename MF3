@@ -1,0 +1,11 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Hades God Hub | Mystic Falls", "DarkTheme")
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection(" ")
+Section:NewButton("1", "", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Omg562/Scripts/main/MF'),true))()
+end)
+Section:NewButton("2", "", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Omg562/Scripts/main/MF2'),true))()
+end)

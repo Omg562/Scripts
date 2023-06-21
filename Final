@@ -1,0 +1,11 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Hades God Hub | Stranger Things: Tragedies", "DarkTheme")
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("STT")
+Section:NewButton("1", "", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Omg562/Scripts/main/ST'),true))()
+end)
+Section:NewButton("2", "", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Omg562/Scripts/main/ST2'),true))()
+end)

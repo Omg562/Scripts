@@ -1,0 +1,1018 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Hades God Hub | My outfits", "DarkTheme")
+local Tab = Window:NewTab("Characters Outfits")
+local Section = Tab:NewSection("Scarlet Witch")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 11205886318")
+
+
+    game.Players:Chat("!hat 8722372634")
+
+
+
+    game.Players:Chat("!hat 6201996010")
+
+
+
+    game.Players:Chat("!hat 7138539012")
+
+
+
+    game.Players:Chat("!hat 11305834898")
+
+
+    game.Players:Chat("!hat 11707825697")
+
+end)
+local Section = Tab:NewSection("Maleficent")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 7586107443")
+
+
+    game.Players:Chat("!hat 7586110659")
+
+
+
+    game.Players:Chat("!hat 6201993102")
+
+
+
+    game.Players:Chat("!hat 12358824033")
+
+
+
+    game.Players:Chat("!hat 4846527611")
+
+end)
+local Section = Tab:NewSection("Agatha Harkness")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 6252770349")
+
+
+    game.Players:Chat("!hat 6450699930")
+
+
+    game.Players:Chat("!hat 6450630380")
+
+end)
+local Section = Tab:NewSection("Child")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 5897464879")
+
+
+    game.Players:Chat("!hat 5318153052")
+
+
+    game.Players:Chat("!hat 10000547095")
+
+    game.Players:Chat("!hat 10000551541")
+
+end)
+local Section = Tab:NewSection("Dark Phoenix")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 7062106398")
+
+
+    game.Players:Chat("!hat 6241758924")
+
+
+    game.Players:Chat("!hat 11600755936")
+
+
+    game.Players:Chat("!hat 11600845352")
+
+end)
+local Section = Tab:NewSection("White Phoenix")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 10626957217")
+
+
+    game.Players:Chat("!hat 10626953196")
+
+    game.Players:Chat("!hat 6241758924")
+
+end)
+local Section = Tab:NewSection("Jean Grey")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 8931427099")
+
+
+    game.Players:Chat("!hat 8931638110")
+
+
+    game.Players:Chat("!hat 9039575763")
+
+
+    game.Players:Chat("!hat 8998821357")
+
+end)
+local Section = Tab:NewSection("Poison Ivy")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 5673720879")
+
+
+    game.Players:Chat("!hat 6418067145")
+
+
+    game.Players:Chat("!hat 8864258938")
+
+
+    game.Players:Chat("!hat 7395774499")
+
+    game.Players:Chat("!hat 7395865920")
+
+
+    game.Players:Chat("!hat 7974265343")
+
+    game.Players:Chat("!hat 11317685695")
+
+    game.Players:Chat("!hat 6501897047")
+
+
+    game.Players:Chat("!hat 6689639086")
+
+    game.Players:Chat("!hat 10404924739")
+
+end)
+local Section = Tab:NewSection("Madison Montgomery")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 7619603259")
+
+    game.Players:Chat("!hat 6201963409")
+
+    game.Players:Chat("!hat 7041830569")
+
+    game.Players:Chat("!hat 12848387166")
+
+    game.Players:Chat("!hat 6422264438")
+
+end)
+local Section = Tab:NewSection("Pearl")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 6065790194")
+
+
+    game.Players:Chat("!hat 10998164126")
+
+    game.Players:Chat("!hat 10860142045")
+
+
+    game.Players:Chat("!hat 10922877430")
+
+
+    game.Players:Chat("!hat 5832723245")
+
+    game.Players:Chat("!hat 10849854385")
+
+
+    game.Players:Chat("!hat 10851402572")
+
+end)
+local Section = Tab:NewSection("Y2k Raven")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 12109909660")
+
+    game.Players:Chat("!hat 12284164632")
+
+
+    game.Players:Chat("!hat 11828951789")
+
+    game.Players:Chat("!hat 4339260389")
+
+
+    game.Players:Chat("!hat 6564174200")
+
+
+    game.Players:Chat("!hat 10224993032")
+
+
+    game.Players:Chat("!hat 7058271173")
+
+end)
+local Section = Tab:NewSection("Scarlet Witch HOM")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 7961770451")
+
+
+    game.Players:Chat("!hat 5065017446")
+
+    game.Players:Chat("!hat 11159696302")
+
+
+    game.Players:Chat("!hat 11158748427")
+
+end)
+local Section = Tab:NewSection("Sabrina")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 7896135207")
+
+
+    game.Players:Chat("!hat 8928851470")
+
+
+    game.Players:Chat("!hat 6101237343")
+
+
+    game.Players:Chat("!hat 6385803977")
+
+
+    game.Players:Chat("!hat 6385865812")
+
+end)
+local Section = Tab:NewSection("Terri Joe")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 5551033198")
+
+
+    game.Players:Chat("!hat 12390275055")
+
+
+    game.Players:Chat("!hat 12390257773")
+
+
+    game.Players:Chat("!hat 13471248946")
+
+end)
+local Section = Tab:NewSection("Hela")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 9809983016")
+
+
+    game.Players:Chat("!hat 4710568248")
+
+    game.Players:Chat("!hat 5592012007")
+
+
+    game.Players:Chat("!hat 10077835805")
+
+
+    game.Players:Chat("!hat 5918265883")
+
+
+    game.Players:Chat("!hat 7667152036")
+
+end)
+local Section = Tab:NewSection("Jennifer")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 7813340529")
+
+
+    game.Players:Chat("!hat 8105865293")
+
+
+    game.Players:Chat("!hat 5831629501")
+
+
+    game.Players:Chat("!hat 7141653591")
+
+
+    game.Players:Chat("!hat 11316851085")
+
+
+    game.Players:Chat("!hat 11316851085")
+
+
+    game.Players:Chat("!hat 10004436058")
+
+end)
+local Section = Tab:NewSection("Starfire")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 10032750090")
+
+
+    game.Players:Chat("!hat 11139549345")
+
+
+    game.Players:Chat("!hat 8819718112")
+
+
+    game.Players:Chat("!hat 8819801585")
+
+
+    game.Players:Chat("!hat 8656044599")
+
+
+    game.Players:Chat("!hat 7063230283")
+
+
+    game.Players:Chat("!hat 12085505463")
+
+
+    game.Players:Chat("!hat 13421032719")
+
+end)
+local Section = Tab:NewSection("Bonnie Bennett")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 10137879043")
+
+
+    game.Players:Chat("!hat 12472944213")
+
+
+    game.Players:Chat("!hat 7622069298")
+
+
+    game.Players:Chat("!hat 5703085264")
+
+end)
+local Section = Tab:NewSection("Vision")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 6550451026")
+
+
+    game.Players:Chat("!hat 6550447794")
+
+
+    game.Players:Chat("!hat 6564174200")
+
+
+    game.Players:Chat("!hat 11373568161")
+
+end)
+local Section = Tab:NewSection("Wolverine")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 4995497755")
+
+
+    game.Players:Chat("!hat 4374334355")
+
+
+    game.Players:Chat("!hat 35292159")
+
+
+    game.Players:Chat("!hat 6685032920")
+
+
+    game.Players:Chat("!hat 5094968416")
+
+end)
+local Section = Tab:NewSection("The Countess")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 5972768598")
+
+    game.Players:Chat("!hat 11165891890")
+
+
+    game.Players:Chat("!hat 11797344988")
+
+
+    game.Players:Chat("!hat 11703600701")
+
+
+    game.Players:Chat("!hat 6443687307")
+
+
+    game.Players:Chat("!hat 10931915695")
+
+
+    game.Players:Chat("!hat 6239323549")
+
+
+    game.Players:Chat("!hat 7098386516")
+
+    game.Players:Chat("!hat 5355328927")
+
+end)
+local Section = Tab:NewSection("Azula")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 7385847783")
+
+    game.Players:Chat("!hat 7385850257")
+
+
+    game.Players:Chat("!hat 62718076")
+
+
+    game.Players:Chat("!hat 5618074586")
+
+
+    game.Players:Chat("!hat 11164490082")
+
+
+    game.Players:Chat("!hat 11164512738")
+
+
+    game.Players:Chat("!hat 6774029427")
+
+
+    game.Players:Chat("!hat 6774023878")
+
+end)
+local Section = Tab:NewSection("Lana Del Rey Met Gala")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 8547250170")
+
+
+    game.Players:Chat("!hat 8547149848")
+
+
+    game.Players:Chat("!hat 6276048123")
+
+    game.Players:Chat("!hat 7670891505")
+
+    game.Players:Chat("!hat 7670923267")
+
+
+    game.Players:Chat("!hat 8231039071")
+
+
+    game.Players:Chat("!hat 6239323549")
+
+
+    game.Players:Chat("!hat 10967768241")
+
+end)
+local Section = Tab:NewSection("Wiccan")
+Section:NewButton("Outfit", " ", function()
+
+    game.Players:Chat("!hat 8220690294")
+
+    game.Players:Chat("!hat 6682451716")
+
+
+    game.Players:Chat("!hat 8948919139")
+
+
+    game.Players:Chat("!hat 6072071268")
+
+
+    game.Players:Chat("!hat 12757685003")
+
+
+    game.Players:Chat("!hat 12757682694")
+
+end)
+local Section = Tab:NewSection("Magik")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 6447816627")
+
+
+    game.Players:Chat("!hat 10154316393")
+
+
+    game.Players:Chat("!hat 8275237326")
+
+
+    game.Players:Chat("!hat 9057982097")
+
+
+    game.Players:Chat("!hat 9057979011")
+
+end)
+local Section = Tab:NewSection("Harley Quinn")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 6211691607")
+
+
+    game.Players:Chat("!hat 7604593027")
+
+    game.Players:Chat("!hat 13608816896")
+
+
+    game.Players:Chat("!hat 10900983085")
+
+    game.Players:Chat("!hat 10810361866")
+
+end)
+local Section = Tab:NewSection("Invisible Woman")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 9778666200")
+
+
+    game.Players:Chat("!hat 9778668553")
+
+    game.Players:Chat("!hat 10078474501")
+
+
+    game.Players:Chat("!hat 7213660295")
+
+end)
+local Section = Tab:NewSection("Zatanna")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 9182698122")
+
+    game.Players:Chat("!hat 9182351974")
+
+    game.Players:Chat("!hat 10001988493")
+
+end)
+local Section = Tab:NewSection("Bloom")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 10595160622")
+
+
+    game.Players:Chat("!hat 6682098431")
+
+
+    game.Players:Chat("!hat 3021380845")
+
+
+    game.Players:Chat("!hat 3185014670")
+
+end)
+local Section = Tab:NewSection("Stella")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 5764438748")
+
+    game.Players:Chat("!hat 7284726473")
+
+
+    game.Players:Chat("!hat 6202154780")
+
+
+    game.Players:Chat("!hat 9192619592")
+
+
+    game.Players:Chat("!hat 10014123765")
+
+
+    game.Players:Chat("!hat 8615211949")
+
+
+    game.Players:Chat("!hat 2486292322")
+
+    game.Players:Chat("!hat 2486276382")
+
+end)
+local Tab = Window:NewTab("Chicken outfits")
+local Section = Tab:NewSection("Outfit 1")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 330294137")
+
+
+    game.Players:Chat("!hat 5591730084")
+
+
+    game.Players:Chat("!hat 11455655487")
+
+
+    game.Players:Chat("!hat 6934674578")
+
+
+    game.Players:Chat("!hat 11854752077")
+
+
+    game.Players:Chat("!hat 4660621665")
+
+
+    game.Players:Chat("!hat 5944818089")
+
+
+    game.Players:Chat("!hat 6239323549")
+
+
+    game.Players:Chat("!hat 7290247829")
+
+
+    game.Players:Chat("!hat 6741186481")
+
+end)
+local Section = Tab:NewSection("Outfit 2")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 136777031")
+
+
+    game.Players:Chat("!hat 5943774123")
+
+
+    game.Players:Chat("!hat 7761072246")
+
+
+    game.Players:Chat("!hat 9384209672")
+
+
+    game.Players:Chat("!hat 8207519233")
+
+
+    game.Players:Chat("!hat 8496657288")
+
+
+    game.Players:Chat("!hat 4660621665")
+
+
+    game.Players:Chat("!hat 5699953661")
+
+
+    game.Players:Chat("!hat 6773867960")
+
+
+    game.Players:Chat("!hat 8028212139")
+
+end)
+local Tab = Window:NewTab("༺Legend༻'s outfits")
+local Section = Tab:NewSection("Outfit 1")
+Section:NewButton("Outfit", " ", function()
+    game.Players:Chat("!hat 1402432199")
+
+
+    game.Players:Chat("!hat 2606174048")
+
+    game.Players:Chat("!hat 409739014")
+
+
+    game.Players:Chat("!hat 132080536")
+
+
+    game.Players:Chat("!hat 132080511")
+
+
+    game.Players:Chat("!hat 132080453")
+
+
+    game.Players:Chat("!hat 132080312")
+
+
+    game.Players:Chat("!hat 115770904")
+
+
+    game.Players:Chat("!hat 98584347")
+
+end)
+local Tab = Window:NewTab("Heads")
+local Section = Tab:NewSection("")
+Section:NewButton("Narrow", " ", function()
+    game.Players:Chat("!hat 746774687")
+
+end)
+Section:NewButton("Faceless skin tone nr1", " ", function()
+    game.Players:Chat("!hat 10860895128")
+
+end)
+Section:NewButton("Faceless skin tone nr2", " ", function()
+    game.Players:Chat("!hat 12984065736")
+
+end)
+Section:NewButton("Headless", " ", function()
+    game.Players:Chat("!hat 134082579")
+
+end)
+local Tab = Window:NewTab("Animations")
+local Section = Tab:NewSection("Bubbly animation")
+Section:NewButton("Bubbly Run", " ", function()
+    game.Players:Chat("!hat 1018548665")
+
+end)
+Section:NewButton("Bubbly Walk", " ", function()
+    game.Players:Chat("!hat 1018549681")
+
+end)
+Section:NewButton("Bubbly Fall", " ", function()
+    game.Players:Chat("!hat 1018552770")
+
+end)
+Section:NewButton("Bubbly Jump", " ", function()
+    game.Players:Chat("!hat 1018553240")
+
+end)
+Section:NewButton("Bubbly Idle", " ", function()
+    game.Players:Chat("!hat 1018553897")
+
+end)
+Section:NewButton("Bubbly Swim", " ", function()
+    game.Players:Chat("!hat 1018554245")
+
+end)
+Section:NewButton("Bubbly Climb", " ", function()
+    game.Players:Chat("!hat 1018554668")
+
+end)
+local Section = Tab:NewSection("Stylish animation")
+Section:NewButton("Stylish Run", " ", function()
+    game.Players:Chat("!hat 619512153")
+
+end)
+Section:NewButton("Stylish Walk", " ", function()
+    game.Players:Chat("!hat 619512767")
+
+end)
+Section:NewButton("Stylish Fall", " ", function()
+    game.Players:Chat("!hat 619511417")
+
+end)
+Section:NewButton("Stylish Jump", " ", function()
+    game.Players:Chat("!hat 619511974")
+
+end)
+Section:NewButton("Stylish Idle", " ", function()
+    game.Players:Chat("!hat 619511648")
+
+end)
+Section:NewButton("Stylish Swim", " ", function()
+    game.Players:Chat("!hat 619512450")
+
+end)
+Section:NewButton("Stylish Climb", " ", function()
+    game.Players:Chat("!hat 619509955")
+
+end)
+local Section = Tab:NewSection("Ninja animation")
+Section:NewButton("Ninja Run", " ", function()
+    game.Players:Chat("!hat 658830056")
+
+end)
+Section:NewButton("Ninja Walk", " ", function()
+    game.Players:Chat("!hat 658831143")
+
+end)
+Section:NewButton("Ninja Fall", " ", function()
+    game.Players:Chat("!hat 658831500")
+
+end)
+Section:NewButton("Ninja Jump", " ", function()
+    game.Players:Chat("!hat 658832070")
+
+end)
+Section:NewButton("Ninja Idle", " ", function()
+    game.Players:Chat("!hat 658832408")
+
+end)
+Section:NewButton("Ninja Swim", " ", function()
+    game.Players:Chat("!hat 658832807")
+
+end)
+Section:NewButton("Ninja Climb", " ", function()
+    game.Players:Chat("!hat 658833139")
+
+end)
+local Section = Tab:NewSection("Toy animation")
+Section:NewButton("Toy Run", " ", function()
+    game.Players:Chat("!hat 973766674")
+
+end)
+Section:NewButton("Toy Walk", " ", function()
+    game.Players:Chat("!hat 973767371")
+
+end)
+Section:NewButton("Toy Fall", " ", function()
+    game.Players:Chat("!hat 973768058")
+
+end)
+Section:NewButton("Toy Jump", " ", function()
+    game.Players:Chat("!hat 973770652")
+
+end)
+Section:NewButton("Toy Idle", " ", function()
+    game.Players:Chat("!hat 973771666")
+
+end)
+Section:NewButton("Toy Swim", " ", function()
+    game.Players:Chat("!hat 973772659")
+
+end)
+Section:NewButton("Toy Climb", " ", function()
+    game.Players:Chat("!hat 973773170")
+
+end)
+local Section = Tab:NewSection("Rthro animation")
+Section:NewButton("Rthro Run", " ", function()
+    game.Players:Chat("!hat 2510238627")
+
+end)
+Section:NewButton("Rthro Walk", " ", function()
+    game.Players:Chat("!hat 2510242378")
+
+end)
+Section:NewButton("Rthro Fall", " ", function()
+    game.Players:Chat("!hat 2510233257")
+
+end)
+Section:NewButton("Rthro Jump", " ", function()
+    game.Players:Chat("!hat 2510236649")
+
+end)
+Section:NewButton("Rthro Idle", " ", function()
+    game.Players:Chat("!hat 2510235063")
+
+end)
+Section:NewButton("Rthro Swim", " ", function()
+    game.Players:Chat("!hat 2510240941")
+
+end)
+Section:NewButton("Rthro Climb", " ", function()
+    game.Players:Chat("!hat 2510230574")
+
+end)
+local Tab = Window:NewTab("Faces")
+local Section = Tab:NewSection("")
+Section:NewButton("Sapphire Gaze", " ", function()
+    game.Players:Chat("!hat 880473016")
+
+end)
+Section:NewButton("Princess Alexis", " ", function()
+    game.Players:Chat("!hat 6590375198")
+
+end)
+Section:NewButton("Miss Scarlet", " ", function()
+    game.Players:Chat("!hat 334656210")
+
+end)
+Section:NewButton("Super Pink Heart Makeup", " ", function()
+    game.Players:Chat("!hat 6590371677")
+
+end)
+Section:NewButton("Sorority Star Face", " ", function()
+    game.Players:Chat("!hat 3690515434")
+
+end)
+Section:NewButton("Arachnid Queen", " ", function()
+    game.Players:Chat("!hat 2528319611")
+
+end)
+Section:NewButton("Persephone's Girl Glam", " ", function()
+    game.Players:Chat("!hat 7243865988")
+
+end)
+Section:NewButton("Silver Punk Face", " ", function()
+    game.Players:Chat("!hat 387256603")
+
+end)
+Section:NewButton("Mon Cheri Face", " ", function()
+    game.Players:Chat("!hat 7243931574")
+
+end)
+Section:NewButton("Cat Eye - Zara Larsson", " ", function()
+    game.Players:Chat("!hat 7893455671")
+
+end)
+Section:NewButton("Golden Eyes - 24kGoldn", " ", function()
+    game.Players:Chat("!hat 9156275069")
+
+end)
+Section:NewButton("Butterfly Wink - Lil Nas X (LNX)", " ", function()
+    game.Players:Chat("!hat 7657646351")
+
+end)
+Section:NewButton("Smiling Girl", " ", function()
+    game.Players:Chat("!hat 209994875")
+
+end)
+Section:NewButton("Sigmund", " ", function()
+    game.Players:Chat("!hat 21311601")
+
+end)
+Section:NewButton("Nouveau George", " ", function()
+    game.Players:Chat("!hat 398675764")
+
+end)
+Section:NewButton("Otakufaic", " ", function()
+    game.Players:Chat("!hat 1665638148")
+
+end)
+local Tab = Window:NewTab("Body types")
+local Section = Tab:NewSection("Woman")
+Section:NewButton("Woman Head", " ", function()
+    game.Players:Chat("!hat 86498113")
+
+end)
+Section:NewButton("Woman Torso", " ", function()
+    game.Players:Chat("!hat 86499666")
+
+end)
+Section:NewButton("Woman Right Arm", " ", function()
+    game.Players:Chat("!hat 86499698")
+
+end)
+Section:NewButton("Woman Left Arm", " ", function()
+    game.Players:Chat("!hat 86499716")
+
+end)
+Section:NewButton("Woman Left Leg", " ", function()
+    game.Players:Chat("!hat 86499753")
+
+end)
+Section:NewButton("Woman Right Leg", " ", function()
+    game.Players:Chat("!hat 86499793")
+
+end)
+local Section = Tab:NewSection("Robloxian 2.0")
+Section:NewButton("Roblox 2.0 Torso", " ", function()
+    game.Players:Chat("!hat 27112025")
+
+end)
+Section:NewButton("Roblox 2.0 Right Arm", " ", function()
+    game.Players:Chat("!hat 27112039")
+
+end)
+Section:NewButton("Roblox 2.0 Left Arm", " ", function()
+    game.Players:Chat("!hat 27112052")
+
+end)
+Section:NewButton("Roblox 2.0 Left Leg", " ", function()
+    game.Players:Chat("!hat 27112056")
+
+end)
+Section:NewButton("Roblox 2.0 Right Leg", " ", function()
+    game.Players:Chat("!hat 27112068")
+
+end)
+local Section = Tab:NewSection("ROBLOX Girl")
+Section:NewButton("ROBLOX Girl Torso", " ", function()
+    game.Players:Chat("!hat 376547767")
+
+end)
+Section:NewButton("ROBLOX Girl Right Arm", " ", function()
+    game.Players:Chat("!hat 376547341")
+
+end)
+Section:NewButton("ROBLOX Girl Left Arm", " ", function()
+    game.Players:Chat("!hat 376547633")
+
+end)
+Section:NewButton("ROBLOX Girl Left Leg", " ", function()
+    game.Players:Chat("!hat 376546668")
+
+end)
+Section:NewButton("ROBLOX Girl Right Leg", " ", function()
+    game.Players:Chat("!hat 376547092")
+
+end)
+local Section = Tab:NewSection("ROBLOX Boy")
+Section:NewButton("ROBLOX Boy Torso", " ", function()
+    game.Players:Chat("!hat 376532000")
+
+end)
+Section:NewButton("ROBLOX Boy Right Arm", " ", function()
+    game.Players:Chat("!hat 376531012")
+
+end)
+Section:NewButton("ROBLOX Boy Left Arm", " ", function()
+    game.Players:Chat("!hat 376547633")
+
+end)
+Section:NewButton("ROBLOX Boy Left Leg", " ", function()
+    game.Players:Chat("!hat 376531300")
+
+end)
+Section:NewButton("ROBLOX Boy Right Leg", " ", function()
+    game.Players:Chat("!hat 376531703")
+
+end)
+local Section = Tab:NewSection("Undercover Superhero")
+Section:NewButton("Undercover Superhero Torso", " ", function()
+    game.Players:Chat("!hat 76215493")
+
+end)
+Section:NewButton("Undercover Superhero Right Arm", " ", function()
+    game.Players:Chat("!hat 76215577")
+
+end)
+Section:NewButton("Undercover Superhero Left Arm", " ", function()
+    game.Players:Chat("!hat 76215624")
+
+end)
+Section:NewButton("Undercover Superhero Left Leg", " ", function()
+    game.Players:Chat("!hat 76215697")
+
+end)
+Section:NewButton("Undercover Superhero Right Leg", " ", function()
+    game.Players:Chat("!hat 76215747")
+
+end)
+local Section = Tab:NewSection("XBOX_M")
+Section:NewButton("XBOX_M Torso", " ", function()
+    game.Players:Chat("!hat 301826032")
+
+end)
+Section:NewButton("XBOX_M Right Arm", " ", function()
+    game.Players:Chat("!hat 301825492")
+
+end)
+Section:NewButton("XBOX_M Left Arm", " ", function()
+    game.Players:Chat("!hat 301824684")
+
+end)
+Section:NewButton("XBOX_M Left Leg", " ", function()
+    game.Players:Chat("!hat 301825699")
+
+end)
+Section:NewButton("XBOX_M Right Leg", " ", function()
+    game.Players:Chat("!hat 301825891")
+
+end)
+local Section = Tab:NewSection("Korblox")
+Section:NewButton("1", " ", function()
+    game.Players:Chat("!hat 139607718")
+
+end)
+local Tab = Window:NewTab("Staffs")
+local Section = Tab:NewSection("")
+Section:NewButton("Erisyphia - Staff", " ", function()
+    game.Players:Chat("!hat 3141364957")
+
+end)
+Section:NewButton("Tycoon Summoning staff", " ", function()
+    game.Players:Chat("!hat 3210526113")
+
+end)
+local Tab = Window:NewTab("Admin")
+local Section = Tab:NewSection(" ")
+Section:NewButton("Infinite Yield", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+local Tab = Window:NewTab("Credits")
+local SettingsSection = Tab:NewSection("discord: Hades#2087")
+local SettingsSection = Tab:NewSection("Some outfits from: lqvemagic#0207")
+local SettingsSection = Tab:NewSection("Toggle UI")
+SettingsSection:NewKeybind("Toggle UI", "Toggle UI", Enum.KeyCode.F, function()
+    Library:ToggleUI()
+end)

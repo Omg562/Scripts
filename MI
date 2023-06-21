@@ -1,0 +1,786 @@
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Hades God Hub | Marvel Incursions", "DarkTheme")
+     -- MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Powers")
+    
+    MainSection:NewButton("Speed", "Run Fast as Speed", function()
+    print(currentOption)
+    while true do 
+    wait(0,5)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 121
+
+end
+
+    
+    end)
+
+
+
+  MainSection:NewButton("Black Widow's Invisibility", "Makes you Invisible", function(currentOption)
+    print(currentOption)
+
+    local args = {
+    [1] = "\0BlackWidow_StartCloaking\0\0"
+}
+
+game:GetService("ReplicatedStorage").Network.RemoteFunction:InvokeServer(unpack(args))
+
+end)
+
+
+local MainSection = Main:NewSection("Terri Joe")
+	
+MainSection:NewToggle("Banish", "Keybind (1)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "1" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "\0Banish\0\0",
+    [2] = player.character.UpperTorso
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+    
+player.character.RagdollConstraints:destroy()
+
+    end
+    end
+    end)
+end)
+
+
+MainSection:NewToggle("Chaos Bolt", "Keybind (2)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "2" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "\0Terri Joe Chaos Bolt\0\0",
+    [2] = player.character.UpperTorso
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+    
+player.character.RagdollConstraints:destroy()
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewButton("Start Shield", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Terri Start Shield\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+
+
+MainSection:NewButton("Stop Shield", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Terri Stop Shield\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+
+local MainSection = Main:NewSection("Child")
+	
+MainSection:NewToggle("Chaos Banish", "Keybind (3)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "3" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "\0ChaosBanish\0\0",
+    [2] = player.character.UpperTorso
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+    
+player.character.RagdollConstraints:destroy()
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewButton("Telepathic Outburst", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Child Telepathic Outburst\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Start Shield", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Chaos Start Shield\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Stop Shield", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Chaos Stop Shield\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+
+local MainSection = Main:NewSection("Dark Phoenix")
+	
+MainSection:NewToggle("Disintegration", "Keybind (4)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "4" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "\0Disintegration\0\0",
+    [2] = player.character.UpperTorso
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+    
+player.character.RagdollConstraints:destroy()
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewToggle("Pain Infliction", "Keybind (5)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "5" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "\0DPainInfliction\0\0",
+    [2] = player.character.UpperTorso
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+    
+player.character.RagdollConstraints:destroy()
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewButton("Telepathic Outburst", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Dark Telepathic Outburst\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Start Shield", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Dark Start Shield\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Stop Shield", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Dark Stop Shield\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+
+local MainSection = Main:NewSection("Scarlet Witch: House Of Magneto")
+	
+MainSection:NewToggle("Pain Infliction", "Keybind (6)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "6" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "\0PainInfliction\0\0",
+    [2] = player.character.UpperTorso
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+    
+player.character.RagdollConstraints:destroy()
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewToggle("Shatter", "Keybind (7)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "7" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "\0Shatter Scarlet Witch: House Of Magneto\0\0",
+    [2] = player.character.UpperTorso
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+    
+player.character.RagdollConstraints:destroy()
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewButton("Telepathic Outburst", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Scarlet Witch: House Of Magneto Telepathic Outburst\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Start Shield", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Scarlet Witch: House Of Magneto Start Shield\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Stop Shield", "", function(currentOption)
+    print(currentOption)
+local args = {
+    [1] = "\0Scarlet Witch: House Of Magneto Stop Shield\0\0"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+end)
+
+
+
+               MainSection:NewLabel("Reset Character")
+
+
+    local Free = Window:NewTab("Custom")
+    local FreeSection = Free:NewSection("Custom With Heroes Powers")
+    
+    FreeSection:NewButton("Remove Main Screen", "You have to reset after you click that", function(currentOption)
+    print(currentOption)
+   
+       game.ReplicatedStorage.Ui.MainScreen:destroy()
+       game.WakSpace.Selection_Background:destroy()
+
+end)
+	
+
+FreeSection:NewButton("Custom with Atom's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Atomic Eve")
+
+end)
+
+
+FreeSection:NewButton("Custom with Child's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Child")
+
+end)
+
+
+FreeSection:NewButton("Custom with Dark Phoenix powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Dark Phoenix")
+
+end)
+
+
+FreeSection:NewButton("Custom with Jean's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Jean Grey")
+
+end)
+
+
+FreeSection:NewButton("Custom with Korra's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Korra")
+
+end)
+
+
+FreeSection:NewButton("Custom with Pink Diamond's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Pink Diamond")
+
+end)
+
+
+FreeSection:NewButton("Custom with Raven's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Raven")
+
+end)
+
+
+FreeSection:NewButton("Custom with HOM's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Scarlet Witch: House Of Magneto")
+
+end)
+
+
+FreeSection:NewButton("Custom with Storm's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Storm")
+
+end)
+
+
+FreeSection:NewButton("Custom with Terri Joe's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Terri Joe")
+
+end)
+
+
+FreeSection:NewButton("Custom with Violet's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Violet")
+
+end)
+
+
+FreeSection:NewButton("Custom with Wanda's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Wanda Maximoff")
+
+end)
+
+
+FreeSection:NewButton("Custom with Iceman's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Iceman")
+
+end)
+
+
+FreeSection:NewButton("Custom with Jean's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Jean Grey")
+
+end)
+
+
+FreeSection:NewButton("Custom with Lauren's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Lauren Strucker")
+
+end)
+
+
+FreeSection:NewButton("Custom with Gwen's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Gwen")
+
+end)
+
+
+FreeSection:NewButton("Custom with Prom Gwen's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Prom Gwen")
+
+end)
+
+
+FreeSection:NewButton("Custom with MoM powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Scarlet Witch: Multiverse Of Madness")
+
+end)
+
+
+FreeSection:NewButton("Custom with Star Sapphire's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Star Sapphire")
+
+end)
+
+
+FreeSection:NewButton("Custom with Starfire's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Starfire")
+
+end)
+
+
+FreeSection:NewButton("Custom with Supergirl's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Supergirl")
+
+end)
+
+
+FreeSection:NewButton("Custom with Vision's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Vision")
+
+end)
+
+
+FreeSection:NewButton("Custom with Madison Montgomery powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Madison")
+
+end)
+
+
+
+---- RESET CHARACTER
+    MainSection:NewDropdown("Quick Reset", "Makes you reset", { "RESET"}, function(currentOption)
+    print(currentOption)
+
+    game.ReplicatedStorage.Remotes.Reset:FireServer()
+    game.VisibilityStateChanged:FireServer("true")
+   
+end)
+    local Admin = Window:NewTab("Admin")
+    local AdminSection = Admin:NewSection("Admin script")
+
+    AdminSection:NewButton("Infinite Yield", " ", function()
+    print(currentOption)
+    
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+
+end)
+
+local Tab = Window:NewTab("Credits")
+local SettingsSection = Tab:NewSection("discord: Hades#2087")
+
+local SettingsSection = Tab:NewSection("Toggle UI")
+SettingsSection:NewKeybind("Toggle UI", "Toggle UI", Enum.KeyCode.F, function()
+    Library:ToggleUI()
+end)
+
+    

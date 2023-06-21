@@ -1,0 +1,157 @@
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Hades God Hub | Multiversal Apocalypses", "DarkTheme")
+     -- MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Powers")
+    
+    MainSection:NewButton("Speed", "Run Fast as Speed", function()
+    print(currentOption)
+    while true do 
+    wait(0,5)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 121
+
+end
+
+    
+    end)
+
+
+
+  MainSection:NewButton("Black Widow's Invisibility", "Makes you Invisible", function(currentOption)
+    print(currentOption)
+
+    local args = {
+    [1] = "\0BlackWidow_StartCloaking\0\0"
+}
+
+game:GetService("ReplicatedStorage").Network.RemoteFunction:InvokeServer(unpack(args))
+
+end)
+
+               MainSection:NewLabel("Reset Character")
+
+
+    local Free = Window:NewTab("Custom")
+    local FreeSection = Free:NewSection("Custom With Heroes Powers")
+    
+    FreeSection:NewButton("Remove Main Screen", "You have to reset after you click that", function(currentOption)
+    print(currentOption)
+   
+       game.ReplicatedStorage.Ui.MainScreen:destroy()
+       game.WakSpace.Selection_Background:destroy()
+
+end)
+		    
+FreeSection:NewButton("Custom with Agatha's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Agatha Harkness")
+
+end)
+
+
+FreeSection:NewButton("Custom with Atomic Eve powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Atomic Eve")
+
+end)
+
+
+FreeSection:NewButton("Custom with Dark Phoenix powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Dark Phoenix")
+
+end)
+
+
+FreeSection:NewButton("Custom with KillerFrost powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "KillerFrost")
+
+end)
+
+
+FreeSection:NewButton("Custom with Madison powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Madison")
+
+end)
+
+
+FreeSection:NewButton("Custom with Magik powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Magik")
+
+end)
+
+
+FreeSection:NewButton("Custom with Mantis powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Mantis")
+
+end)
+
+
+FreeSection:NewButton("Custom with Mera's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Mera")
+
+end)
+
+
+FreeSection:NewButton("Custom with MoM powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Scarlet Witch: Multiverse Of Madness")
+
+end)
+
+
+FreeSection:NewButton("Custom with Wanda's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Wanda Maximoff")
+
+end)
+
+
+FreeSection:NewButton("Custom with Zatanna's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Zatanna")
+
+end)
+
+
+---- RESET CHARACTER
+    MainSection:NewDropdown("Quick Reset", "Makes you reset", { "RESET"}, function(currentOption)
+    print(currentOption)
+
+    game.ReplicatedStorage.Remotes.Reset:FireServer()
+    game.VisibilityStateChanged:FireServer("true")
+   
+end)
+   local Admin = Window:NewTab("Admin")
+    local AdminSection = Admin:NewSection("Admin script")
+
+    AdminSection:NewButton("Infinite Yield", " ", function()
+    print(currentOption)
+    
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+
+end)
+
+local Tab = Window:NewTab("Credits")
+local SettingsSection = Tab:NewSection("discord: Hades#2087")
+
+local SettingsSection = Tab:NewSection("Toggle UI")
+SettingsSection:NewKeybind("Toggle UI", "Toggle UI", Enum.KeyCode.F, function()
+    Library:ToggleUI()
+end)

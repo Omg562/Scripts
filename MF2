@@ -1338,7 +1338,7 @@ end)
 MainSection:NewButton("See ghosts", "", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/SlavicCat/MysticFallsScripts/main/SeeGhostsCrackedByTheRussianCats.lua'),true))()
 end)
-MainSection:NewToggle("White Oak Stake Someone", "Keybind (1)", function()
+MainSection:NewToggle("White Oak Stake Someone", "Keybind (2)", function()
     print("You just clicked the bind")
     
     local function getPlayer()
@@ -1378,7 +1378,7 @@ MainSection:NewToggle("White Oak Stake Someone", "Keybind (1)", function()
     end
 
     game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
-        if key == "1" then
+        if key == "2" then
             local player = getPlayer()
             if player then
 	    

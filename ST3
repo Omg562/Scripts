@@ -1304,11 +1304,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab 
     end)
 end)
 
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Hades God Hub | Stranger Things: Tragedies", "DarkTheme")
-
-local Main = Window:NewTab("Powers")
-local MainSection = Main:NewSection("Lab Eleven")
 MainSection:NewToggle("Throw", "Keybind (X)", function()
     print("You just clicked the bind")
     

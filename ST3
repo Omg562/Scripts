@@ -1,0 +1,3506 @@
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Hades God Hub | Stranger Things: Tragedies", "DarkTheme")
+
+local Main = Window:NewTab("Powers")
+local MainSection = Main:NewSection("Lab Eleven")
+MainSection:NewToggle("Push", "Keybind (Q)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:
+	    GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "q" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(928.765380859375, 80.51077270507812, 809.54833984375)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+    
+player.character.RagdollConstraints:destroy()
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewToggle("Neck Snap", "Keybind (F)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:
+	    GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "f" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "neck snap",
+    [2] = player.Character,
+    [3] = Vector3.new(845.5891723632812, 81.5522232055664, 809.5653686523438)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewToggle("Pull", "Keybind (E)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:
+	    GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "e" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(883.9894409179688, 81.03048706054688, 847.955322265625)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("Lab Eleven"):WaitForChild("Lab Eleven Powers"):FireServer(unpack(args))
+
+    end
+    end
+    end)
+end)
+
+local MainSection = Main:NewSection("002")
+MainSection:NewToggle("Push", "Keybind (Q)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:
+	    GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "q" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(848.0889282226562, 82.63458251953125, 803.7548828125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewToggle("Leg Snap", "Keybind (F)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:
+	    GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "f" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Leg Snap",
+    [2] = player.Character,
+    [3] = Vector3.new(899.098876953125, 80.762939453125, 797.157470703125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewToggle("Pull", "Keybind (E)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:
+	    GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "e" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(766.0967407226562, 107.17915344238281, 789.5866088867188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("002"):WaitForChild("002 Powers"):FireServer(unpack(args))
+
+    end
+    end
+    end)
+end)
+
+local MainSection = Main:NewSection("004")
+MainSection:NewToggle("Push", "Keybind (Q)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:
+	    GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "q" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Push",
+    [2] = player.Character,
+    [3] = Vector3.new(872.1967163085938, 78.77045440673828, 864.5856323242188)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewToggle("Arm Snap", "Keybind (F)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:
+	    GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "f" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "arm snap",
+    [2] = player.Character,
+    [3] = Vector3.new(916.79736328125, 108.19853210449219, 897.3145141601562)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+    end
+    end
+    end)
+end)
+
+MainSection:NewToggle("Pull", "Keybind (E)", function()
+    print("You just clicked the bind")
+    
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:
+	    GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "e" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Pull",
+    [2] = player.Character,
+    [3] = Vector3.new(852.0481567382812, 78.99073028564453, 857.348876953125)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Psychics"):WaitForChild("004"):WaitForChild("004 Powers"):FireServer(unpack(args))
+
+    end
+    end
+    end)
+end)
+

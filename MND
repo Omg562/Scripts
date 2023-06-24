@@ -1074,6 +1074,14 @@ FreeSection:NewButton("Custom with Raven's powers", " ", function(currentOption)
 end)
 
 
+FreeSection:NewButton("Custom with Scarlet Witches powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Scarlet Witch")
+
+end)
+
+
 FreeSection:NewButton("Custom with MoM's powers", " ", function(currentOption)
     print(currentOption)
    

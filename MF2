@@ -1399,3 +1399,10 @@ end)
 MainSection:NewButton("See ghosts", "", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/SlavicCat/MysticFallsScripts/main/SeeGhostsCrackedByTheRussianCats.lua'),true))()
 end)
+MainSection:NewButton("unglitch", "", function()
+local args = {
+    [1] = 66.92244720458984
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("FallDamage"):FireServer(unpack(args))
+end)

@@ -490,14 +490,14 @@ PowersSection:NewButton("End Sound Repulsion", "End Sound Shield", function()
 end)
 
 local PowersSection = Tab:NewSection("Power Keybinds")
-PowersSection:NewToggle("Astral Projection", "Keybind (4)", function()
+PowersSection:NewToggle("Astral Projection", "Keybind (5)", function()
 	
     clicktpon = true                 --- to turn off key function make this false and execute   
         plr = game.Players.LocalPlayer
         hum = plr.Character.HumanoidRootPart
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(function(key)
-        if key == '4' then
+        if key == '5' then
         if mouse.Target then
         if clicktpon then
     
@@ -523,14 +523,14 @@ PowersSection:NewButton("Astral Projection End", "End Astral Projection", functi
     game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(ohString1, ohVector32)
 end)
 
-PowersSection:NewToggle("Telekinetic Wave", "Keybind (5)", function()
+PowersSection:NewToggle("Telekinetic Wave", "Keybind (6)", function()
 	
     clicktpon = true                 --- to turn off key function make this false and execute   
         plr = game.Players.LocalPlayer
         hum = plr.Character.HumanoidRootPart
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(function(key)
-        if key == '5' then
+        if key == '6' then
         if mouse.Target then
         if clicktpon then
     
@@ -546,14 +546,14 @@ end
 end)
 end)
 
-PowersSection:NewToggle("Photokinesis", "Keybind (6)", function()
+PowersSection:NewToggle("Photokinesis", "Keybind (7)", function()
 	
     clicktpon = true                 --- to turn off key function make this false and execute   
         plr = game.Players.LocalPlayer
         hum = plr.Character.HumanoidRootPart
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(function(key)
-        if key == '6' then
+        if key == '7' then
         if mouse.Target then
         if clicktpon then
 
@@ -578,14 +578,14 @@ end)
 end)
 
 
-PowersSection:NewToggle("Lightning Bolt", "Keybind (7)", function()
+PowersSection:NewToggle("Lightning Bolt", "Keybind (8)", function()
 	
     clicktpon = true                 --- to turn off key function make this false and execute   
         plr = game.Players.LocalPlayer
         hum = plr.Character.HumanoidRootPart
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(function(key)
-        if key == '7' then
+        if key == '8' then
         if mouse.Target then
         if clicktpon then
     
@@ -609,14 +609,14 @@ end
 end)
 end)
 
-PowersSection:NewToggle("Telekinetic Surge", "Keybind (8)", function()
+PowersSection:NewToggle("Telekinetic Surge", "Keybind (9)", function()
 	
     clicktpon = true                 --- to turn off key function make this false and execute   
         plr = game.Players.LocalPlayer
         hum = plr.Character.HumanoidRootPart
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(function(key)
-        if key == '8' then
+        if key == '9' then
         if mouse.Target then
         if clicktpon then
     
@@ -640,14 +640,14 @@ end
 end)
 end)
 
-PowersSection:NewToggle("Cryokinesis", "Keybind (9)", function()
+PowersSection:NewToggle("Cryokinesis", "Keybind (-)", function()
 	
     clicktpon = true                 --- to turn off key function make this false and execute   
         plr = game.Players.LocalPlayer
         hum = plr.Character.HumanoidRootPart
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(function(key)
-        if key == '9' then
+        if key == '-' then
         if mouse.Target then
         if clicktpon then
     
@@ -664,14 +664,14 @@ end
 end)
 end)
 
-PowersSection:NewToggle("Aerokinesis", "Keybind (-)", function()
+PowersSection:NewToggle("Aerokinesis", "Keybind ([)", function()
 	
     clicktpon = true                 --- to turn off key function make this false and execute   
         plr = game.Players.LocalPlayer
         hum = plr.Character.HumanoidRootPart
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(function(key)
-        if key == '-' then
+        if key == '[' then
         if mouse.Target then
         if clicktpon then
     
@@ -1392,6 +1392,105 @@ PowersSection:NewButton("Throw", "", function()
     game:GetService("ReplicatedStorage").Witches.GoodWitches.Phoebe.PowerEvents.PhoebeEvents:FireServer(ohString1,
         ohVector32)
 end)
+
+PowersSection:NewToggle("Combustion", "Keybind (X)", function()
+	
+    clicktpon = true                 --- to turn off key function make this false and execute   
+        plr = game.Players.LocalPlayer
+        hum = plr.Character.HumanoidRootPart
+        mouse = plr:GetMouse()
+        mouse.KeyDown:connect(function(key)
+        if key == 'x' then
+        if mouse.Target then
+        if clicktpon then
+    
+ local ohString1 = "combustion"
+local ohVector32 = Vector3.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Piper.PowerEvents.PiperEvents:FireServer(ohString1, ohVector32)
+
+
+local ohString1 = "alternatecombustion"
+local ohVector32 = Vector3.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Piper.PowerEvents.PiperEvents:FireServer(ohString1, ohVector32)
+
+end
+end
+end
+end)
+end)
+
+PowersSection:NewToggle("Life Draining", "Keybind (L)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "l" then
+            local player = getPlayer()
+            if player then
+
+                local ohString1 = "drain"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+
+            end
+        end
+    end)
+end)
+
+PowersSection:NewButton("End", "", function()
+
+    local ohString1 = "drainend"
+    local ohVector32 = Vector3.new(24.71255111694336, 81.73103332519531, -192.269775390625)
+
+    game:GetService("ReplicatedStorage").Witches.GoodWitches.PBaxter.PowerEvents.BaxterEvents:FireServer(ohString1,
+        ohVector32)
+end)
+
 
 PowersSection:NewToggle("Molecular Deceleration", "Keybind (G)", function()
     print("You just clicked the bind")
@@ -3046,6 +3145,494 @@ end
 end)
 end)
 
+PowersSection:NewToggle("Kill", "Keybind (4)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "4" then
+            local player = getPlayer()
+            if player then
+
+                local ohString1 = "drain"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+                local ohString1 = "damage"
+                local ohInstance2 = player.character.RightUpperArm
+
+                game:GetService("ReplicatedStorage").Witches.GoodWitches.Billie.PowerEvents.BillieEvents:FireServer(ohString1
+                    , ohInstance2)
+
+    local ohString1 = "enough"
+    local ohVector32 = Vector3.new(24.71255111694336, 81.73103332519531, -192.269775390625)
+
+    game:GetService("ReplicatedStorage").Witches.GoodWitches.PBaxter.PowerEvents.BaxterEvents:FireServer(ohString1,
+        ohVector32)
+
+            end
+        end
+    end)
+end)
+
 PowersSection:NewButton("Kill All", "Must be near to them, Very Laggy", function()
   -- Script generated by ClaudiaSpy - credits to ClaudiaHOTM#2452
   local Plr = game.Players.LocalPlayer
@@ -3272,6 +3859,7 @@ PowersSection:NewButton("Kill All", "Must be near to them, Very Laggy", function
   end
 
 end)
+
 
 PowersSection:NewButton("Tk All Neena", "", function()
     -- Script generated by ClaudiaSpy - credits to ClaudiaHOTM#2452

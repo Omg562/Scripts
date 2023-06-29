@@ -1399,10 +1399,26 @@ end)
 MainSection:NewButton("See ghosts", "", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/SlavicCat/MysticFallsScripts/main/SeeGhostsCrackedByTheRussianCats.lua'),true))()
 end)
-MainSection:NewButton("unglitch", "", function()
+MainSection:NewToggle("unglitch", "Keybind (1)", function()
+	
+    clicktpon = true    
+        plr = game.Players.LocalPlayer
+        hum = plr.Character.HumanoidRootPart
+        mouse = plr:GetMouse()
+        mouse.KeyDown:connect(function(key)
+        if key == '1' then
+        if mouse.Target then
+        if clicktpon then
+
+
 local args = {
     [1] = 66.92244720458984
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("FallDamage"):FireServer(unpack(args))
+
+end
+end
+end
+end)
 end)

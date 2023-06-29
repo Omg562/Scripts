@@ -491,7 +491,7 @@ PowersSection:NewButton("End Sound Repulsion", "End Sound Shield", function()
 end)
 
 local PowersSection = Tab:NewSection("Power Keybinds")
-PowersSection:NewToggle("Astral Projection", "Keybind (5)", function()
+PowersSection:NewToggle("Astral Projection", "Keybind (4)", function()
 	
     clicktpon = true                 --- to turn off key function make this false and execute   
         plr = game.Players.LocalPlayer

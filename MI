@@ -1,5 +1,5 @@
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Hades God Hub | Marvel Incursions", "DarkTheme")
+    local Window = Library.CreateLib("Hades God Hub | Multiversal: Invention", "DarkTheme")
      -- MAIN
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Powers")
@@ -752,6 +752,14 @@ FreeSection:NewButton("Custom with Madison Montgomery powers", " ", function(cur
     print(currentOption)
    
    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Madison")
+
+end)
+
+
+FreeSection:NewButton("Custom with Inadu's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Inadu")
 
 end)
 

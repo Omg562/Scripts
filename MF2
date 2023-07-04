@@ -1384,6 +1384,13 @@ end
 end)
 end)
 
+MainSection:NewButton("Vampire face", "", function()
+local args = {
+    [1] = "ChangeFace"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Vampire"):FireServer(unpack(args))
+end)
 
 local Main = Window:NewTab("Misc")
 local MainSection = Main:NewSection(" ")

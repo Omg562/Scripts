@@ -4472,6 +4472,13 @@ end
 end)
 end)
 
+Section:NewButton("Ragdoll", "", function()
+game:GetService("Players").LocalPlayer.Character.Ragdoll.Ragdoll.RagdollEvent:FireServer()
+end)
+Section:NewButton("Unragdoll", "", function()
+game:GetService("Players").LocalPlayer.Character.Ragdoll.Ragdoll.UnragdollEvent:FireServer()
+end)
+
 local Tab = Window:NewTab("Credits")
 local SettingsSection = Tab:NewSection("Credits to: AcidX3yt")
 local SettingsSection = Tab:NewSection("Credits to: ༺Legend༻#4426")

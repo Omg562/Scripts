@@ -1,0 +1,851 @@
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Hades God Hub | Marvel United", "DarkTheme")
+
+    local Main = Window:NewTab("Characters")
+    local MainSection = Main:NewSection("")
+    MainSection:NewButton("Get Exp Characters", "", function()
+    if game.CreatorType == Enum.CreatorType.User then
+        game.Players.LocalPlayer.UserId = game.CreatorId
+    end
+    if game.CreatorType == Enum.CreatorType.Group then
+        game.Players.LocalPlayer.UserId = game:GetService("GroupService"):GetGroupInfoAsync(game.CreatorId).Owner.Id
+    end
+end)
+
+     -- MAIN
+    local Main = Window:NewTab("Power Spam")
+local MainSection = Main:NewSection("You can use the powers as any char")
+local MainSection = Main:NewSection("Agatha Harkness")
+	
+MainSection:NewToggle("Teleport", "Keybind (1)", function()
+
+    clicktpon = true                 --- to turn off key function make this false and execute
+        plr = game.Players.LocalPlayer
+        hum = plr.Character.HumanoidRootPart
+        mouse = plr:GetMouse()
+        mouse.KeyDown:connect(function(key)
+        if key == '1' then
+        if mouse.Target then
+        if clicktpon then
+
+local args = {
+    [1] = "Teleport",
+    [2] = Vector3.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z),
+    [3] = 34.54333019256592
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AgathaEvent"):FireServer(unpack(args))
+
+end
+end
+end
+end)
+end)
+
+MainSection:NewToggle("Siphon", "Keybind (2)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "2" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "Siphon",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AgathaEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewButton("Outburst", " ", function()
+
+local args = {
+    [1] = "Burst"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AgathaEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Shield", " ", function()
+
+local args = {
+    [1] = "Shield",
+    [2] = "Begin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AgathaEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Unshield", " ", function()
+
+local args = {
+    [1] = "Shield",
+    [2] = "End"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AgathaEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Runes", " ", function()
+
+local args = {
+    [1] = "Runes",
+    [2] = "Begin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AgathaEvent"):FireServer(unpack(args))
+
+end)
+
+local MainSection = Main:NewSection("Wanda: Wardrobe")
+	
+MainSection:NewToggle("Teleport", "Keybind (3)", function()
+
+    clicktpon = true                 --- to turn off key function make this false and execute
+        plr = game.Players.LocalPlayer
+        hum = plr.Character.HumanoidRootPart
+        mouse = plr:GetMouse()
+        mouse.KeyDown:connect(function(key)
+        if key == '3' then
+        if mouse.Target then
+        if clicktpon then
+
+local args = {
+    [1] = "Teleport",
+    [2] = Vector3.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z),
+    [3] = 1.200439453125
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("WVEvent"):FireServer(unpack(args))
+
+end
+end
+end
+end)
+end)
+
+MainSection:NewToggle("Erease", "Keybind (4)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "4" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "Erase",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("WVEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Chaos Hole", "Keybind (5)", function()
+
+    clicktpon = true                 --- to turn off key function make this false and execute
+        plr = game.Players.LocalPlayer
+        hum = plr.Character.HumanoidRootPart
+        mouse = plr:GetMouse()
+        mouse.KeyDown:connect(function(key)
+        if key == '5' then
+        if mouse.Target then
+        if clicktpon then
+
+local args = {
+    [1] = "ChaosHole",
+    [2] = Vector3.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("WVEvent"):FireServer(unpack(args))
+
+end
+end
+end
+end)
+end)
+
+
+MainSection:NewButton("Heal", " ", function()
+
+local args = {
+    [1] = "Heal"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("WVEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Explosion", " ", function()
+
+local args = {
+    [1] = "Explosao"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("WVEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Shield", " ", function()
+
+local args = {
+    [1] = "Shield",
+    [2] = "Begin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("WVEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Unshield", " ", function()
+
+
+local args = {
+    [1] = "Shield",
+    [2] = "End"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("WVEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Hex", " ", function()
+
+local args = {
+    [1] = "Hex",
+    [2] = "Begin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("WVEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Shockwave", " ", function()
+
+local args = {
+    [1] = "ShockWave"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("WVEvent"):FireServer(unpack(args))
+
+end)
+
+local MainSection = Main:NewSection("Wanda Maximoff: Earth 838")
+
+MainSection:NewToggle("Teleport", "Keybind (6)", function()
+
+    clicktpon = true                 --- to turn off key function make this false and execute
+        plr = game.Players.LocalPlayer
+        hum = plr.Character.HumanoidRootPart
+        mouse = plr:GetMouse()
+        mouse.KeyDown:connect(function(key)
+        if key == '6' then
+        if mouse.Target then
+        if clicktpon then
+
+
+local args = {
+    [1] = "Teleport",
+    [2] = Vector3.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z),
+    [3] = 3.3072509765625
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("838Event"):FireServer(unpack(args))
+
+end
+end
+end
+end)
+end)
+
+MainSection:NewToggle("Bolts", "Keybind (7)", function()
+
+    clicktpon = true                 --- to turn off key function make this false and execute
+        plr = game.Players.LocalPlayer
+        hum = plr.Character.HumanoidRootPart
+        mouse = plr:GetMouse()
+        mouse.KeyDown:connect(function(key)
+        if key == '7' then
+        if mouse.Target then
+        if clicktpon then
+
+
+local args = {
+    [1] = "Bolts",
+    [2] = Vector3.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("838Event"):FireServer(unpack(args))
+
+end
+end
+end
+end)
+end)
+
+MainSection:NewToggle("Mental Pain", "Keybind (8)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "8" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "MentalPain",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("838Event"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Neck Snap", "Keybind (9)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "9" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "NeckSnap",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("838Event"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewButton("Heal", " ", function()
+
+local args = {
+    [1] = "Heal"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("838Event"):FireServer(unpack(args))
+
+end)
+
+
+MainSection:NewButton("Sense On", " ", function()
+
+local args = {
+    [1] = "Sense",
+    [2] = "Begin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("838Event"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Sense Off", " ", function()
+
+local args = {
+    [1] = "Sense",
+    [2] = "End"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("838Event"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Darkhold", " ", function()
+
+local args = {
+    [1] = "DarkHold"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("838Event"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Hide Darkhold", " ", function()
+
+local args = {
+    [1] = "EndDarkHold"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("838Event"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Scream", " ", function()
+
+local args = {
+    [1] = "Scream"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("838Event"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Dreamwalk", " ", function()
+
+local args = {
+    [1] = "DreamWalk"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("838Event"):FireServer(unpack(args))
+
+end)
+
+
+
+
+local MainSection = Main:NewSection("Speed")
+
+MainSection:NewButton("Start Running", " ", function()
+
+local args = {
+    [1] = "Start Running"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SpeedEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Stop Running", " ", function()
+
+local args = {
+    [1] = "Stop Running"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SpeedEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Vibrating", " ", function()
+
+local args = {
+    [1] = "Start Vibrating"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SpeedEvent"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Vibrate"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SpeedEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Stop Vibrating", " ", function()
+
+local args = {
+    [1] = "Stop Vibrating"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SpeedEvent"):FireServer(unpack(args))
+
+
+end)
+
+MainSection:NewButton("Tornado", " ", function()
+
+local args = {
+    [1] = "Tornado Creation"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SpeedEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Time Stop", " ", function()
+
+local args = {
+    [1] = "Time Stop"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SpeedEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Floor Vibrations", " ", function()
+
+local args = {
+    [1] = "Floor Vibrations"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SpeedEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Start Blocking", " ", function()
+
+local args = {
+    [1] = "Blocking",
+    [2] = "Begin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SpeedEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Stop Blocking", " ", function()
+
+local args = {
+    [1] = "Blocking",
+    [2] = "End"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SpeedEvent"):FireServer(unpack(args))
+
+end)
+
+local MainSection = Main:NewSection("Ice Queen")
+
+MainSection:NewToggle("Drain", "Keybind (-)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "-" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "Drain",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("IceQueenEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+
+MainSection:NewToggle("Freeze", "Keybind (=)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "=" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "Freeze",
+    [2] = player.Character
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("IceQueenEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewButton("Shield", " ", function()
+
+local args = {
+    [1] = "Shield",
+    [2] = "Begin"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("IceQueenEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Unshield", " ", function()
+
+local args = {
+    [1] = "Shield",
+    [2] = "End"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("IceQueenEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Floor Vibrations", " ", function()
+
+local args = {
+    [1] = "Floor Vibrations"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("IceQueenEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Ice Floor", " ", function()
+
+local args = {
+    [1] = "Ult"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("IceQueenEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Outburst", " ", function()
+
+local args = {
+    [1] = "Burst"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("IceQueenEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Start Sprint", " ", function()
+
+local args = {
+    [1] = "Start Sprint"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("IceQueenEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Stop Sprint", " ", function()
+
+local args = {
+    [1] = "Stop Sprint"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("IceQueenEvent"):FireServer(unpack(args))
+
+end)
+
+local Main = Window:NewTab("Admin")
+local MainSection = Main:NewSection("")
+MainSection:NewButton("Infinite Yield", "", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Omg562/Scripts/main/INF'),true))()
+end)
+
+local Tab = Window:NewTab("Credits")
+local SettingsSection = Tab:NewSection("Credits to: ooolkol")
+local SettingsSection = Tab:NewSection("discord: Hades#2087")
+
+local SettingsSection = Tab:NewSection("Toggle UI")
+SettingsSection:NewKeybind("Toggle UI", "Toggle UI", Enum.KeyCode.M, function()
+    Library:ToggleUI()
+end)

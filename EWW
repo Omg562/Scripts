@@ -1290,6 +1290,17 @@ game:GetService("ReplicatedStorage"):WaitForChild("StormEvent"):FireServer()
 
 end)
 
+MainSection:NewButton("Summon player", " ", function()
+
+local args = {
+    [1] = "ShowGui"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Summon"):FireServer(unpack(args))
+
+
+end)
+
 
 
 local Main = Window:NewTab("Admin")

@@ -55,6 +55,14 @@ FreeSection:NewButton("Custom with Charmcaster's powers", " ", function(currentO
 end)
 
 
+FreeSection:NewButton("Custom with Child's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Child")
+
+end)
+
+
 FreeSection:NewButton("Custom with Invisible Woman's powers", " ", function(currentOption)
     print(currentOption)
    

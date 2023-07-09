@@ -1,0 +1,1254 @@
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Hades God Hub | Every Witch Way", "DarkTheme")
+
+     -- MAIN
+    local Main = Window:NewTab("Power Spam")
+local MainSection = Main:NewSection("Powers")
+
+MainSection:NewToggle("Kill", "Keybind (R)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "r" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Throw",
+    [2] = Vector3.new(-129.7339630126953, 466.66204833984375, -49.272361755371094)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TelekinesisEvent2"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Pain Infliction", "Keybind (G)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "g" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PainInflictionEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewButton("Pain Infliction stop", " ", function()
+
+local args = {
+    [1] = "End"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PainInflictionEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewToggle("Telekinetic Lift", "Keybind (H)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "h" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("TeleLiftEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+
+MainSection:NewToggle("Remove powers", "Keybind (X)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "x" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemovePowerSpellEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Rain", "Keybind (C)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "c" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RainSummonEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Sleep", "Keybind (V)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "v" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("SleepSpellEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Blind", "Keybind (T)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "t" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("BlindSpellEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Freeze", "Keybind (Z)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "z" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("FreezingSpellEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Turn into monkey", "Keybind (M)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "m" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GuitarSpellEvent1"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Set on fire", "Keybind (Y)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "y" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("FireSpellEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Put into ketchup bottle", "Keybind (U)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "u" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("KetchupTeleporterEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Resurrection", "Keybind (B)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "b" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Ressurection"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Freeze Breath", "Keybind (P)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "p" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("BreathFreezeEvent"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Teleport", "Keybind (Q)", function()
+
+    clicktpon = true                 --- to turn off key function make this false and execute
+        plr = game.Players.LocalPlayer
+        hum = plr.Character.HumanoidRootPart
+        mouse = plr:GetMouse()
+        mouse.KeyDown:connect(function(key)
+        if key == 'q' then
+        if mouse.Target then
+        if clicktpon then
+
+local args = {
+    [1] = Vector3.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+}
+
+game:GetService("Players").LocalPlayer.Character.Teleportation.RemoteEvent:FireServer(unpack(args))
+
+end
+end
+end
+end)
+end)
+
+MainSection:NewButton("Freeze around", " ", function()
+
+game:GetService("ReplicatedStorage"):WaitForChild("FreezeEvent"):FireServer()
+
+end)
+
+MainSection:NewButton("Clone", " ", function()
+
+game:GetService("ReplicatedStorage"):WaitForChild("DuplicateSpellEvent"):FireServer()
+
+end)
+
+MainSection:NewButton("Shield", " ", function()
+
+game:GetService("ReplicatedStorage"):WaitForChild("ProtectionSpellEvent"):FireServer()
+
+end)
+
+MainSection:NewButton("Banish the choosen one", " ", function()
+
+game:GetService("ReplicatedStorage"):WaitForChild("BanishChosenPowersEvent"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("BanishChosenPowersEvent"):FireServer()
+game:GetService("ReplicatedStorage"):WaitForChild("BanishChosenPowersEvent"):FireServer()
+
+end)
+
+MainSection:NewButton("Invisibility", " ", function()
+
+game:GetService("ReplicatedStorage"):WaitForChild("InvisibilitySpellEvent"):FireServer()
+
+end)
+
+MainSection:NewButton("Maddie's full potential", " ", function()
+
+game:GetService("ReplicatedStorage"):WaitForChild("StormEvent"):FireServer()
+
+end)
+
+
+
+local Main = Window:NewTab("Admin")
+local MainSection = Main:NewSection("")
+MainSection:NewButton("Infinite Yield", "", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Omg562/Scripts/main/INF'),true))()
+end)
+
+local Tab = Window:NewTab("Credits")
+local SettingsSection = Tab:NewSection("Credits to: ooolkol")
+local SettingsSection = Tab:NewSection("discord: Hades#2087")
+
+local SettingsSection = Tab:NewSection("Toggle UI")
+SettingsSection:NewKeybind("Toggle UI", "Toggle UI", Enum.KeyCode.M, function()
+    Library:ToggleUI()
+end)

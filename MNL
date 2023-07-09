@@ -39,55 +39,6 @@ FreeSection:NewButton("Custom with Agatha's powers", " ", function(currentOption
    game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Agatha Harkness")
 
 end)
-	
-
-FreeSection:NewButton("Custom with Atom's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Atomic Eve")
-
-end)
-
-
-FreeSection:NewButton("Custom with Charmcaster's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Charmcaster")
-
-end)
-
-
-FreeSection:NewButton("Custom with Dark Phoenix's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Dark Phoenix")
-
-end)
-
-
-FreeSection:NewButton("Custom with Emma's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Emma Frost")
-
-end)
-
-
-FreeSection:NewButton("Custom with Maleficent's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Maleficent")
-
-end)
-
-
-FreeSection:NewButton("Custom with Gwen's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Gwen")
-
-end)
-
 
 FreeSection:NewButton("Custom with Iceman's powers", " ", function(currentOption)
     print(currentOption)
@@ -96,6 +47,12 @@ FreeSection:NewButton("Custom with Iceman's powers", " ", function(currentOption
 
 end)
 
+FreeSection:NewButton("Custom with Invisible Woman's powers", " ", function(currentOption)
+    print(currentOption)
+   
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Invisible Woman")
+
+end)
 
 FreeSection:NewButton("Custom with Jean's powers", " ", function(currentOption)
     print(currentOption)
@@ -120,23 +77,6 @@ FreeSection:NewButton("Custom with Jean Phoenix Force", " ", function(currentOpt
 
 end)
 
-
-FreeSection:NewButton("Custom with KillerFrost's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "KillerFrost")
-
-end)
-
-
-FreeSection:NewButton("Custom with Lauren's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Lauren Strucker")
-
-end)
-
-
 FreeSection:NewButton("Custom with Madison's powers", " ", function(currentOption)
     print(currentOption)
    
@@ -145,37 +85,12 @@ FreeSection:NewButton("Custom with Madison's powers", " ", function(currentOptio
 end)
 
 
-FreeSection:NewButton("Custom with Mera's powers", " ", function(currentOption)
+FreeSection:NewButton("Custom with Monica's powers", " ", function(currentOption)
     print(currentOption)
    
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Mera")
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Monica Rambeau")
 
 end)
-
-
-FreeSection:NewButton("Custom with Nicki's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Nicki")
-
-end)
-
-
-FreeSection:NewButton("Custom with Polaris's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Polaris Lorna Dane")
-
-end)
-
-
-FreeSection:NewButton("Custom with Prom Gwen's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Prom Gwen")
-
-end)
-
 
 FreeSection:NewButton("Custom with Hom's powers", " ", function(currentOption)
     print(currentOption)
@@ -192,28 +107,6 @@ FreeSection:NewButton("Custom with MoM's powers", " ", function(currentOption)
 
 end)
 
-FreeSection:NewButton("Custom with Star Sapphire's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Star Sapphire")
-
-end)
-
-FreeSection:NewButton("Custom with StarButterfly's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "StarButterfly")
-
-end)
-
-FreeSection:NewButton("Custom with Starfire's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Starfire")
-
-end)
-
-
 FreeSection:NewButton("Custom with Storm's powers", " ", function(currentOption)
     print(currentOption)
    
@@ -222,28 +115,6 @@ FreeSection:NewButton("Custom with Storm's powers", " ", function(currentOption)
 end)
 
 
-FreeSection:NewButton("Custom with Terri Joe's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Terri Joe")
-
-end)
-
-
-FreeSection:NewButton("Custom with Child's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "The Child")
-
-end)
-
-
-FreeSection:NewButton("Custom with Violet's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Violet")
-
-end)
 
 
 FreeSection:NewButton("Custom with Vision's powers", " ", function(currentOption)
@@ -257,7 +128,7 @@ end)
 FreeSection:NewButton("Custom with Wanda Maximoff's powers", " ", function(currentOption)
     print(currentOption)
    
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Wanda Maximoff")
+   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "Wanda Maximoff: Endgame")
 
 end)
 
@@ -269,13 +140,6 @@ FreeSection:NewButton("Custom with Wanda Wardrobe's powers", " ", function(curre
 
 end)
 
-
-FreeSection:NewButton("Custom with White Raven's powers", " ", function(currentOption)
-    print(currentOption)
-   
-   game.ReplicatedStorage.Remotes.CharacterSelection:InvokeServer("Custom", "White Raven")
-
-end)
 ---- RESET CHARACTER
     MainSection:NewDropdown("Quick Reset", "Makes you reset", { "RESET"}, function(currentOption)
     print(currentOption)

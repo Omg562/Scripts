@@ -1301,6 +1301,11 @@ game:GetService("ReplicatedStorage"):WaitForChild("Summon"):FireServer(unpack(ar
 
 end)
 
+MainSection:NewButton("Summon storm", " ", function()
+
+game:GetService("ReplicatedStorage"):WaitForChild("SummonStormEvent"):FireServer()
+
+end)
 
 
 local Main = Window:NewTab("Admin")

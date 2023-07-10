@@ -3028,6 +3028,15 @@ game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("Cr
         end)
         end)
 
+    local Main = Window:NewTab("Teleports")
+local MainSection = Main:NewSection("Teleport into places!")
+MainSection:NewButton("Main Arena", "", function()
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(216, 11, 686))
+end)
+MainSection:NewButton("Lobby", "", function()
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-10100, -25, 16062))
+end)
+
 local Main = Window:NewTab("Admin")
 local MainSection = Main:NewSection("")
 MainSection:NewButton("Infinite Yield", "", function()

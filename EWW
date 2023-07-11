@@ -3,7 +3,7 @@
 
      -- MAIN
     local Main = Window:NewTab("Power Spam")
-local MainSection = Main:NewSection("Powers")
+local MainSection = Main:NewSection("Keybinds")
 
 MainSection:NewToggle("Kill", "Keybind (R)", function()
     print("You just clicked the bind")
@@ -1630,6 +1630,8 @@ end
 end
 end)
 end)
+
+local MainSection = Main:NewSection("Buttons")
 
 MainSection:NewButton("Freeze around", " ", function()
 

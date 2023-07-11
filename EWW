@@ -1692,6 +1692,27 @@ game:GetService("ReplicatedStorage"):WaitForChild("EarthquakeAbility"):FireServe
 
 end)
 
+MainSection:NewButton("Beam Start", " ", function()
+
+local args = {
+    [1] = "Start",
+    [2] = Vector3.new(-153.53135681152344, 464.3108215332031, -11.378715515136719)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("BeamEvent"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Beam End", " ", function()
+
+local args = {
+    [1] = "End"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("BeamEvent"):FireServer(unpack(args))
+
+end)
+
     local Main = Window:NewTab("Mass Spells")
 local MainSection = Main:NewSection("Spells")
 

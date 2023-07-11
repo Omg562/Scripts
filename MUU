@@ -1,0 +1,2531 @@
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Hades God Hub | Marvel Uprising", "DarkTheme")
+
+    local Main = Window:NewTab("Characters")
+local MainSection = Main:NewSection("enjoy")
+
+MainSection:NewButton("Emma Frost", " ", function()
+
+local args = {
+    [1] = "Emma Frost",
+    [2] = "pigsisabaddieee"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("SetSubject"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Storm", " ", function()
+
+local args = {
+    [1] = "Storm",
+    [2] = "pigsisabaddieee"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("SetSubject"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Doctor Strange", " ", function()
+
+local args = {
+    [1] = "Doctor Strange",
+    [2] = "pigsisabaddieee"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("SetSubject"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Black Widow", " ", function()
+
+local args = {
+    [1] = "Black Widow",
+    [2] = "pigsisabaddieee"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("SetSubject"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Jean", " ", function()
+
+local args = {
+    [1] = "Jean",
+    [2] = "pigsisabaddieee"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("SetSubject"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Jubilee", " ", function()
+
+local args = {
+    [1] = "Jubilee",
+    [2] = "pigsisabaddieee"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("SetSubject"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Pixie", " ", function()
+
+local args = {
+    [1] = "Pixie",
+    [2] = "pigsisabaddieee"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("SetSubject"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Psylocke", " ", function()
+
+local args = {
+    [1] = "Psylocke",
+    [2] = "pigsisabaddieee"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("SetSubject"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Enchantress", " ", function()
+
+local args = {
+    [1] = "Enchantress",
+    [2] = "pigsisabaddieee"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("SetSubject"):FireServer(unpack(args))
+
+end)
+
+    local Main = Window:NewTab("Power Spam")
+local MainSection = Main:NewSection("Emma Frost")
+
+MainSection:NewToggle("Kill", "Keybind (R)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "r" then
+            local player = getPlayer()
+            if player then
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Kill", "Keybind (E)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "e" then
+            local player = getPlayer()
+            if player then
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+
+MainSection:NewToggle("Mind Control Start", "Keybind (2)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "2" then
+            local player = getPlayer()
+            if player then
+local args = {
+    [1] = "Start",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("MindControl"):InvokeServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Mind Control Stop", "Keybind (3)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "3" then
+            local player = getPlayer()
+            if player then
+local args = {
+    [1] = "Stop",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("MindControl"):InvokeServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Pain Inducement", "Keybind (4)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "4" then
+            local player = getPlayer()
+            if player then
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Pain Inducement Stop", "Keybind (5)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "5" then
+            local player = getPlayer()
+            if player then
+local args = {
+    [1] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PainInflict"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Telepathy Swipe", "Keybind (6)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "6" then
+            local player = getPlayer()
+            if player then
+local args = {
+    [1] = "Swipe",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Telepathic Mode", "Keybind (7)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "7" then
+            local player = getPlayer()
+            if player then
+local args = {
+    [1] = "TPMode",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewButton("Astral Projection", " ", function()
+
+local args = {
+    [1] = "Astral",
+    [2] = {
+        ["Meshes/HBFJNSK___Anim114.001 (1)"] = Enum.Material.Slate,
+        ["LeftFoot"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim18.001 (1)"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim111.001 (1)"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim116.001 (1)"] = Enum.Material.Slate,
+        ["RightFoot"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim14.002"] = Enum.Material.Slate,
+        ["RightUpperArm"] = Enum.Material.Slate,
+        ["Head"] = Enum.Material.Slate,
+        ["UpperTorso"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim13.001 (1)"] = Enum.Material.Slate,
+        ["LEftHeel"] = Enum.Material.Slate,
+        ["LeftHand"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim110.001 (1)"] = Enum.Material.Slate,
+        ["RightHeel"] = Enum.Material.Slate,
+        ["LeftLowerArm"] = Enum.Material.Slate,
+        ["Cape"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim115.003 (1)"] = Enum.Material.Slate,
+        ["HumanoidRootPart"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim17.002 (1)"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim117.002"] = Enum.Material.Slate,
+        ["RightLowerLeg"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim113.001 (1)"] = Enum.Material.Slate,
+        ["LowerTorso"] = Enum.Material.Slate,
+        ["RightLowerArm"] = Enum.Material.Slate,
+        ["Handle"] = Enum.Material.Slate,
+        ["LeftLowerLeg"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim115.002 (1)"] = Enum.Material.Slate,
+        ["LeftUpperArm"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim110.003 (1)"] = Enum.Material.Slate,
+        ["RightHand"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim17.003 (1)"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim118.002"] = Enum.Material.Slate,
+        ["RightUpperLeg"] = Enum.Material.Slate,
+        ["Meshes/HBFJNSK___Anim115.001 (1)"] = Enum.Material.Slate,
+        ["LeftUpperLeg"] = Enum.Material.Slate
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Diamond Form On", " ", function()
+
+local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DiamondForm"):InvokeServer(unpack(args))
+
+
+end)
+
+MainSection:NewButton("Diamond Form Off", " ", function()
+
+local args = {
+    [1] = false,
+    [2] = {
+        ["Meshes/HBFJNSK___Anim114.001 (1)"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["LeftFoot"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Meshes/HBFJNSK___Anim18.001 (1)"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Meshes/HBFJNSK___Anim111.001 (1)"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Meshes/HBFJNSK___Anim116.001 (1)"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["RightFoot"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["LeftLowerLeg"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["RightUpperArm"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Head"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["UpperTorso"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Meshes/HBFJNSK___Anim13.001 (1)"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["RightLowerArm"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["LeftHand"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Meshes/HBFJNSK___Anim110.001 (1)"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["RightHeel"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["LeftLowerArm"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Cape"] = {
+            ["Color"] = Color3.fromRGB(159.0000057220459, 161.0000056028366, 172.00000494718552),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["RightHand"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["HumanoidRootPart"] = {
+            ["Color"] = Color3.fromRGB(179.000004529953, 136.00000709295273, 114.0000008046627),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Meshes/HBFJNSK___Anim17.002 (1)"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Meshes/HBFJNSK___Anim117.002"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["RightLowerLeg"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Meshes/HBFJNSK___Anim113.001 (1)"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["LowerTorso"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Meshes/HBFJNSK___Anim115.002 (1)"] = {
+            ["Color"] = Color3.fromRGB(235.0000011920929, 238.00000101327896, 255),
+            ["Material"] = Enum.Material.Metal
+        },
+        ["Meshes/HBFJNSK___Anim118.002"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["RightUpperLeg"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Handle"] = {
+            ["Color"] = Color3.fromRGB(163.00000548362732, 162.00000554323196, 165.00000536441803),
+            ["Material"] = Enum.Material.Plastic
+        },
+        ["LeftUpperArm"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Meshes/HBFJNSK___Anim110.003 (1)"] = {
+            ["Color"] = Color3.fromRGB(235.0000011920929, 238.00000101327896, 255),
+            ["Material"] = Enum.Material.Metal
+        },
+        ["LeftUpperLeg"] = {
+            ["Color"] = Color3.fromRGB(234.00000125169754, 184.00000423192978, 146.00000649690628),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Meshes/HBFJNSK___Anim17.003 (1)"] = {
+            ["Color"] = Color3.fromRGB(235.0000011920929, 238.00000101327896, 255),
+            ["Material"] = Enum.Material.Metal
+        },
+        ["Meshes/HBFJNSK___Anim115.003 (1)"] = {
+            ["Color"] = Color3.fromRGB(235.0000011920929, 238.00000101327896, 255),
+            ["Material"] = Enum.Material.Metal
+        },
+        ["LEftHeel"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Meshes/HBFJNSK___Anim115.001 (1)"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        },
+        ["Meshes/HBFJNSK___Anim14.002"] = {
+            ["Color"] = Color3.fromRGB(248.0000004172325, 248.0000004172325, 248.0000004172325),
+            ["Material"] = Enum.Material.SmoothPlastic
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DiamondForm"):InvokeServer(unpack(args))
+
+
+end)
+
+MainSection:NewButton("Telepathic Cloaking On", " ", function()
+
+local args = {
+    [1] = "Invis",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+
+
+end)
+
+MainSection:NewButton("Telepathic Cloaking Off", " ", function()
+
+local args = {
+    [1] = "Invis",
+    [2] = false,
+    [3] = {
+        ["Meshes/HBFJNSK___Anim114.001 (1)"] = 0,
+        ["LeftFoot"] = 1,
+        ["Meshes/HBFJNSK___Anim18.001 (1)"] = 0,
+        ["Meshes/HBFJNSK___Anim111.001 (1)"] = 0,
+        ["Meshes/HBFJNSK___Anim116.001 (1)"] = 0,
+        ["RightFoot"] = 1,
+        ["LeftLowerLeg"] = 1,
+        ["RightUpperArm"] = 0,
+        ["Head"] = 0,
+        ["UpperTorso"] = 0,
+        ["Meshes/HBFJNSK___Anim13.001 (1)"] = 0,
+        ["Meshes/HBFJNSK___Anim115.002 (1)"] = 0,
+        ["LeftHand"] = 9,
+        ["Meshes/HBFJNSK___Anim110.001 (1)"] = 0,
+        ["RightHeel"] = 0,
+        ["LeftLowerArm"] = 1,
+        ["Cape"] = 0.5099999904632568,
+        ["RightHand"] = 8,
+        ["HumanoidRootPart"] = 1,
+        ["Meshes/HBFJNSK___Anim17.002 (1)"] = 0,
+        ["Meshes/HBFJNSK___Anim117.002"] = 0,
+        ["RightLowerLeg"] = 1,
+        ["Meshes/HBFJNSK___Anim113.001 (1)"] = 0,
+        ["LowerTorso"] = 1,
+        ["LEftHeel"] = 0,
+        ["Meshes/HBFJNSK___Anim115.001 (1)"] = 0,
+        ["Handle"] = 0,
+        ["LeftUpperArm"] = 0,
+        ["Meshes/HBFJNSK___Anim118.002"] = 0,
+        ["Meshes/HBFJNSK___Anim110.003 (1)"] = 0,
+        ["LeftUpperLeg"] = 1,
+        ["Meshes/HBFJNSK___Anim17.003 (1)"] = 0,
+        ["RightUpperLeg"] = 1,
+        ["Meshes/HBFJNSK___Anim14.002"] = 0,
+        ["Meshes/HBFJNSK___Anim115.003 (1)"] = 0,
+        ["RightLowerArm"] = 1
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+
+
+end)
+
+MainSection:NewButton("Telepathic Crown", " ", function()
+
+local args = {
+    [1] = "Crown",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("EmmaTelep"):FireServer(unpack(args))
+
+
+end)
+
+local MainSection = Main:NewSection("Storm")
+
+MainSection:NewButton("Kill Around", " ", function()
+
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Kill Around (Can be laggy)", " ", function()
+
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Kill Around (Can be laggy)", " ", function()
+
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Kill Around", " ", function()
+
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+
+MainSection:NewButton("Wind Expel Start", " ", function()
+
+local args = {
+    [1] = "WindExpel",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Wind Expel Stop", " ", function()
+
+local args = {
+    [1] = "WindExpel",
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Tornado Flight Effect On", " ", function()
+
+local args = {
+    [1] = "FlightLift"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DC"):WaitForChild("RavenFlight"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Tornado Flight Effect Off", " ", function()
+
+local args = {
+    [1] = "FlightDrop"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DC"):WaitForChild("RavenFlight"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Wind Shield On", " ", function()
+
+local args = {
+    [1] = "StormShield"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Wind Shield Off", " ", function()
+
+local args = {
+    [1] = "StormShieldEnd"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Lightning Arc", " ", function()
+
+local args = {
+    [1] = "LightningArc"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Blizzard", " ", function()
+
+local args = {
+    [1] = "StormBlizzard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Tornado Spree", " ", function()
+
+local args = {
+    [1] = "TornadoSpree"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Hail Strike", " ", function()
+
+local args = {
+    [1] = "HailStrike"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Blinding Fog Start", " ", function()
+
+local args = {
+    [1] = "BlindingFog",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Blinding Fog End", " ", function()
+
+local args = {
+    [1] = "BlindingFog",
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+local MainSection = Main:NewSection("Doctor Strange")
+
+MainSection:NewToggle("Kill", "Keybind (F)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "f" then
+            local player = getPlayer()
+            if player then
+
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+
+MainSection:NewToggle("Astral Pulling", "Keybind (8)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "8" then
+            local player = getPlayer()
+            if player then
+	    
+local args = {
+    [1] = "StrangeAstralPulling",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+MainSection:NewToggle("Strangulation", "Keybind (9)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "9" then
+            local player = getPlayer()
+            if player then
+
+local args = {
+    [1] = "Strangulation",
+    [2] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+            end
+        end
+    end)
+end)
+
+
+MainSection:NewButton("Shield Of Seraphim On", " ", function()
+
+local args = {
+    [1] = "StrangeShield"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Shield Of Seraphim Off", " ", function()
+
+local args = {
+    [1] = "StrangeShieldDestroy"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Eye Of Agamotto", " ", function()
+
+local args = {
+    [1] = "StrangeDome"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Astral Projection", " ", function()
+
+local args = {
+    [1] = "StrangeDome"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Health Loop On", " ", function()
+
+local args = {
+    [1] = "HealthLoop",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+local MainSection = Main:NewSection("Black Widow")
+
+MainSection:NewToggle("Widow Line On", "Keybind (Q)", function()
+
+    clicktpon = true                 --- to turn off key function make this false and execute
+        plr = game.Players.LocalPlayer
+        hum = plr.Character.HumanoidRootPart
+        mouse = plr:GetMouse()
+        mouse.KeyDown:connect(function(key)
+        if key == 'q' then
+        if mouse.Target then
+        if clicktpon then
+
+local args = {
+    [1] = "GrappleOn",
+    [2] = Vector3.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end
+end
+end
+end)
+end)
+
+MainSection:NewButton("Widow Line Off", " ", function()
+
+local args = {
+    [1] = "GrappleOff"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end)
+
+
+MainSection:NewToggle("Belt Bomb", "Keybind (9)", function()
+
+    clicktpon = true                 --- to turn off key function make this false and execute
+        plr = game.Players.LocalPlayer
+        hum = plr.Character.HumanoidRootPart
+        mouse = plr:GetMouse()
+        mouse.KeyDown:connect(function(key)
+        if key == '9' then
+        if mouse.Target then
+        if clicktpon then
+
+local args = {
+    [1] = "GrenadeThrow",
+    [2] = Vector3.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Power"):FireServer(unpack(args))
+
+end
+end
+end
+end)
+end)

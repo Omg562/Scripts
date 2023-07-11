@@ -3071,6 +3071,25 @@ game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("Cr
         end)
         end)
 
+               MainSection:NewToggle("Finisher", "Keybind (,)", function()
+
+    clicktpon = true                 --- to turn off key function make this false and execute
+        plr = game.Players.LocalPlayer
+        hum = plr.Character.HumanoidRootPart
+        mouse = plr:GetMouse()
+        mouse.KeyDown:connect(function(key)
+        if key == ',' then
+        if mouse.Target then
+        if clicktpon then
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("Creel"):WaitForChild("Remotes"):WaitForChild("Finisher"):FireServer()
+
+end
+end
+end
+end)
+end)
+
 
 local MainSection = Main:NewSection("Pibby")
 
@@ -3093,24 +3112,7 @@ end
 end)
 end)
 
-               MainSection:NewToggle("Finisher", "Keybind (,)", function()
 
-    clicktpon = true                 --- to turn off key function make this false and execute
-        plr = game.Players.LocalPlayer
-        hum = plr.Character.HumanoidRootPart
-        mouse = plr:GetMouse()
-        mouse.KeyDown:connect(function(key)
-        if key == ',' then
-        if mouse.Target then
-        if clicktpon then
-
-game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("Creel"):WaitForChild("Remotes"):WaitForChild("Finisher"):FireServer()
-
-end
-end
-end
-end)
-end)
 
 
 local MainSection = Main:NewSection("Vigilante")

@@ -1686,6 +1686,12 @@ game:GetService("ReplicatedStorage"):WaitForChild("SummonStormEvent"):FireServer
 
 end)
 
+MainSection:NewButton("Eathquake", " ", function()
+
+game:GetService("ReplicatedStorage"):WaitForChild("EarthquakeAbility"):FireServer()
+
+end)
+
     local Main = Window:NewTab("Mass Spells")
 local MainSection = Main:NewSection("Spells")
 

@@ -3140,6 +3140,436 @@ end
 end)
 end)
 
+
+local MainSection = Main:NewSection("Spiderman 2099")
+
+MainSection:NewToggle("Tackle Claw", "Keybind (P)", function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "p" then
+            local player = getPlayer()
+            if player then
+	    
+
+
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+local args = {
+    [1] = player.Character
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+
+
+end
+end
+end)
+end)
     local Main = Window:NewTab("All")
 local MainSection = Main:NewSection("You can use some powers as any char")
 local MainSection = Main:NewSection("Peacemaker")
@@ -4574,6 +5004,205 @@ game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("Cr
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("Creel"):WaitForChild("Remotes"):WaitForChild("VinePull"):FireServer(unpack(args))
+
+
+            end
+        end
+end   
+
+end)
+
+local MainSection = Main:NewSection("Spiderman 2099")
+MainSection:NewButton("Tackle Claw", "ButtonInfo", function()
+    print("Clicked")
+    local Plr = game.Players.LocalPlayer
+    for i, Player in pairs (game.Players:GetPlayers()) do
+
+        if Player.Character ~= nil and Player ~= Plr then
+            local mag = (Player.Character.UpperTorso.Position - Plr.Character.UpperTorso.Position).magnitude
+            if mag < 100000 then
+                local Target = Player.Character or Player.CharacterAdded:Wait()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+
+local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))local args = {
+    [1] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("SpiderMan"):WaitForChild("Remotes"):WaitForChild("DownSlam2"):FireServer(unpack(args))
+
 
 
             end

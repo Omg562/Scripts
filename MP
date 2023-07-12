@@ -3571,6 +3571,31 @@ end
 end
 end)
 end)
+
+local MainSection = Main:NewSection("Starlight")
+
+               MainSection:NewToggle("Finisher", "Keybind (N)", function()
+
+    clicktpon = true                 --- to turn off key function make this false and execute
+        plr = game.Players.LocalPlayer
+        hum = plr.Character.HumanoidRootPart
+        mouse = plr:GetMouse()
+        mouse.KeyDown:connect(function(key)
+        if key == 'n' then
+        if mouse.Target then
+        if clicktpon then
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("StarLight"):WaitForChild("Remotes"):WaitForChild("Finisher"):FireServer(unpack(args))
+
+end
+end
+end
+end)
+end)
     local Main = Window:NewTab("All")
 local MainSection = Main:NewSection("You can use some powers as any char")
 local MainSection = Main:NewSection("Peacemaker")

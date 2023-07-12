@@ -2478,14 +2478,14 @@ game:GetService("ReplicatedStorage"):WaitForChild("Characters"):WaitForChild("Cr
         end)
         end)
 
-               MainSection:NewToggle("Finisher", "Keybind (X)", function()
+               MainSection:NewToggle("Finisher", "Keybind (V)", function()
 
     clicktpon = true                 --- to turn off key function make this false and execute
         plr = game.Players.LocalPlayer
         hum = plr.Character.HumanoidRootPart
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(function(key)
-        if key == 'x' then
+        if key == 'v' then
         if mouse.Target then
         if clicktpon then
 
@@ -2501,14 +2501,14 @@ end)
 
 local MainSection = Main:NewSection("Pibby")
 
-               MainSection:NewToggle("Finisher", "Keybind (V)", function()
+               MainSection:NewToggle("Finisher", "Keybind (B)", function()
 
     clicktpon = true                 --- to turn off key function make this false and execute
         plr = game.Players.LocalPlayer
         hum = plr.Character.HumanoidRootPart
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(function(key)
-        if key == 'v' then
+        if key == 'b' then
         if mouse.Target then
         if clicktpon then
 
@@ -2525,14 +2525,14 @@ end)
 
 local MainSection = Main:NewSection("Vigilante")
 
-               MainSection:NewToggle("Chainsaw Counter", "Keybind (B)", function()
+               MainSection:NewToggle("Chainsaw Counter", "Keybind (N)", function()
 
     clicktpon = true                 --- to turn off key function make this false and execute
         plr = game.Players.LocalPlayer
         hum = plr.Character.HumanoidRootPart
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(function(key)
-        if key == 'b' then
+        if key == 'n' then
         if mouse.Target then
         if clicktpon then
 
@@ -2551,7 +2551,7 @@ end)
 
 local MainSection = Main:NewSection("Spiderman 2099")
 
-MainSection:NewToggle("Tackle Claw", "Keybind (N)", function()
+MainSection:NewToggle("Tackle Claw", "Keybind (M)", function()
     print("You just clicked the bind")
 
     local function getPlayer()
@@ -2590,7 +2590,7 @@ MainSection:NewToggle("Tackle Claw", "Keybind (N)", function()
     end
 
     game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
-        if key == "n" then
+        if key == "m" then
             local player = getPlayer()
             if player then
 	    
@@ -2981,14 +2981,14 @@ end)
 
 local MainSection = Main:NewSection("Starlight")
 
-               MainSection:NewToggle("Finisher", "Keybind (M)", function()
+               MainSection:NewToggle("Finisher", "Keybind (,)", function()
 
     clicktpon = true                 --- to turn off key function make this false and execute
         plr = game.Players.LocalPlayer
         hum = plr.Character.HumanoidRootPart
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(function(key)
-        if key == 'm' then
+        if key == ',' then
         if mouse.Target then
         if clicktpon then
 
@@ -3006,14 +3006,14 @@ end)
 
 local MainSection = Main:NewSection("Ghostface")
 
-               MainSection:NewToggle("Stab Counter", "Keybind (,)", function()
+               MainSection:NewToggle("Stab Counter", "Keybind ([)", function()
 
     clicktpon = true                 --- to turn off key function make this false and execute
         plr = game.Players.LocalPlayer
         hum = plr.Character.HumanoidRootPart
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(function(key)
-        if key == ',' then
+        if key == '[' then
         if mouse.Target then
         if clicktpon then
 
@@ -3059,14 +3059,14 @@ end)
 
 local MainSection = Main:NewSection("Springtrap")
 
-               MainSection:NewToggle("Finisher", "Keybind ([)", function()
+               MainSection:NewToggle("Finisher", "Keybind (])", function()
 
     clicktpon = true                 --- to turn off key function make this false and execute
         plr = game.Players.LocalPlayer
         hum = plr.Character.HumanoidRootPart
         mouse = plr:GetMouse()
         mouse.KeyDown:connect(function(key)
-        if key == '[' then
+        if key == ']' then
         if mouse.Target then
         if clicktpon then
 
